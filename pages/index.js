@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 
-export default function DeepStudios() {
+export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white font-sans">
       <header className="flex items-center justify-between px-8 py-6 border-b border-neutral-800 shadow-md backdrop-blur-lg bg-black/80">
@@ -15,6 +15,7 @@ export default function DeepStudios() {
         </Button>
       </header>
 
+      {/* Hero Section */}
       <section className="relative text-center px-6 py-40 bg-cover bg-center" style={{ backgroundImage: "url('/hero-modern.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative max-w-4xl mx-auto">
@@ -41,6 +42,7 @@ export default function DeepStudios() {
         </div>
       </section>
 
+      {/* Features Section */}
       <section className="bg-neutral-950 py-28 px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Was macht uns besonders?</h2>
@@ -94,6 +96,7 @@ export default function DeepStudios() {
         </div>
       </section>
 
+      {/* Call to Action Section */}
       <section className="bg-black py-28 px-6 max-w-5xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -111,9 +114,11 @@ export default function DeepStudios() {
         </motion.div>
       </section>
 
+      {/* Footer Section */}
       <footer className="border-t border-neutral-800 text-neutral-500 text-center text-sm py-10 px-4">
         © 2025 Deep Studios. Entwickelt mit Leidenschaft und KI.
       </footer>
     </main>
   );
 }
+
