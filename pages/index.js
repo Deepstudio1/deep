@@ -108,9 +108,13 @@ export default function Home() {
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Erstelle einzigartige Bilder mithilfe modernster künstlicher Intelligenz – einfach, schnell und kostenlos.
           </p>
-          <Button className="bg-black text-white px-6 py-3 text-lg rounded-xl hover:bg-neutral-800">
-            Jetzt ausprobieren
-          </Button>
+          <button
+  onClick={() => window.location.href = 'https://www.youtube.com/watch?v=zMprELBTrcg'}
+  className="bg-white text-black hover:bg-neutral-200 rounded-xl px-6 py-2 shadow-sm"
+>
+  Demo ansehen
+</button>
+
         </motion.div>
       </section>
 
